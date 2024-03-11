@@ -1,0 +1,36 @@
+Timing Information:
+-------------------
+
+Extra Large Array
+-----------------
+Time to run code with push(): 15.441981 ms
+Time to run code with unshift(): 2.797161642 s
+
+Large Array
+-----------
+Time to run code with push(): 1.493439 ms
+Time to run code with unshift(): 28.21763 ms
+
+Medium Array
+------------
+Time to run code with push(): 232.923 μs
+Time to run code with unshift(): 249.883 μs
+
+Small Array
+-----------
+Time to run code with push(): 172.89 μs
+Time to run code with unshift(): 78.228 μs
+
+Tiny Array
+----------
+Time to run code with push(): 143.451 μs
+Time to run code with unshift(): 59.282 μs
+
+
+Push starts off with a slower execution time than unshift. 
+As we scale up, push ends up with the better execution time. 
+This is not true for unshift for which the execution time increases significantly.
+Unshift execution time ends up being 180 times slower for the extraLargeArray.
+Unshift takes more time because it moves everything one spot over to the right.
+Push takes less time as we scale up because it doesn't shift each position in an array.
+It just adds to the tail end.
